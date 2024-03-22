@@ -16,5 +16,4 @@ def validUserNameAndPassword(context):
     
 @then('Verifying home')
 def verify_home(context):
-    assert "MERCURY TOURS" == context.driver.title
-    
+    assert context.driver.title == "Login: Mercury Tours"
